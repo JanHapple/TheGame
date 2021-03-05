@@ -1,25 +1,6 @@
-/* :root {
-    height: 100vh;
-    
-}   */
-
-/* div {
-    width: 300px;
-    
-    
-    margin: auto; 
-    
-    margin: 45vh auto 0;
-    border: solid 2px black;
-    padding: 50px;
-}  */
-
-/* .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
+body{
+    background-color: slategray;
+}
 
 .span-link {
     display: block;
@@ -39,7 +20,6 @@ div {
     padding: 50px;
 }
 
-
 .op2, .op3 {
     display: none;
 } 
@@ -47,16 +27,4 @@ div {
 input {
     text-align: center;
 }
-
-/* .op1, .op2, .op3 {
-    visibility: hidden;
-} */
-
-/* 
-.option2:focus, .op3:focus {
-    visibility: visible;
-}  */
-
-
-
 

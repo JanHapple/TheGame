@@ -1,0 +1,62 @@
+/* :root {
+    height: 100vh;
+    
+}   */
+
+/* div {
+    width: 300px;
+    
+    
+    margin: auto; 
+    
+    margin: 45vh auto 0;
+    border: solid 2px black;
+    padding: 50px;
+}  */
+
+/* .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+.span-link {
+    display: block;
+    text-align: center;
+    width: 300px;
+    margin: auto; 
+    margin: 45vh auto 0;
+    border: solid 2px black;
+    padding: 50px;
+}
+
+div {
+    width: 300px;
+    margin: auto; 
+    margin: 45vh auto 0;
+    border: solid 2px black;
+    padding: 50px;
+}
+
+
+.op2, .op3 {
+    display: none;
+} 
+
+input {
+    text-align: center;
+}
+
+/* .op1, .op2, .op3 {
+    visibility: hidden;
+} */
+
+/* 
+.option2:focus, .op3:focus {
+    visibility: visible;
+}  */
+
+
+
+

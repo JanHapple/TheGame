@@ -18,7 +18,7 @@
 - change scene
 - interact
 
-###### Press "B":
+###### Press "DOWN ARROW":
 - open bag
 - close bag
 

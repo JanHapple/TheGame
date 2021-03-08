@@ -75,7 +75,7 @@ var scene = {
                 if(option == 1){
                     if(dungeonOptions[1] == "a dirty sheet."){
                     // take sheet from tunnel entrance
-                    dungeonOptions[1] = "a tunnel.";
+                        dungeonOptions[1] = "a tunnel.";
                     }else if(dungeonOptions[1] == "a tunnel."){
                     // move to dungeon2
                         option = 0;

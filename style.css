@@ -1,30 +1,43 @@
 body{
-    background-color: slategray;
+    background-color: rgb(40 40 40);
+    font-family: verdana, sans-serif;
+}
+#location{
+    color: darkmagenta;
+    text-align: center;
+    font-size: 70px;
 }
 
-.span-link {
+#hud{
+    color: white;
+    font-size: 40px;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#view, #bag{
+    color: lightskyblue;
+}
+
+/* index */
+a{
+    text-decoration: none;
+}
+
+.menuLink{
+    transition: background-color 1.5s;
+    background-color: darkred;
+    color: white;
     display: block;
+    font-size: 50px;
     text-align: center;
     width: 300px;
     margin: auto; 
     margin: 45vh auto 0;
-    border: solid 2px black;
+    border: solid 5px black;
     padding: 50px;
 }
 
-div {
-    width: 300px;
-    margin: auto; 
-    margin: 45vh auto 0;
-    border: solid 2px black;
-    padding: 50px;
+.menuLink:hover{
+    background-color: green;
 }
-
-.op2, .op3 {
-    display: none;
-} 
-
-input {
-    text-align: center;
-}
-

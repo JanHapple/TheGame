@@ -9,17 +9,18 @@
 </head>
 <body onload="scene.dungeon(0)"></body>
     <h1 id="location"></h1>
-
+<div id="hud">
 <!-- direction display -->   
-    <span>You're looking at </span><span id="view"></span><br>
+    <span class="view">You're looking at </span>
+    <span class="view" id="view"></span><br>
 
 <!-- info msg-->
-<span id="info"></span><br>
+    <span id="info"></span><br>
 
 <!-- bag -->
-    <span id="bagLabel"></span>
-    <span id="bag"></span>
-
+    <span class="bag" id="bagLabel"></span>
+    <span class="bag" id="bag"></span><br>
+</div>
 <!-- scripts -->
     <script src="/script.js"></script>
 </body>

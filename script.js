@@ -40,6 +40,7 @@ function checkKey(k) {
     }
 }
 
+
 // bag
 function bag(c){
    
@@ -67,6 +68,7 @@ var scene = {
             // init
                 option = 0;
                 currScene = "dungeon";
+                document.getElementById("location").innerHTML = "Dungeon";
                 break;
             case 10:
             // interact
@@ -78,6 +80,7 @@ var scene = {
                     // move to dungeon2
                         option = 0;
                         currScene = "dungeon2";
+                        document.getElementById("location").innerHTML = "Dungeon 2";
                         return document.getElementById("view").innerHTML = dungeon2Options[option];
                     }
                 }
@@ -106,6 +109,7 @@ var scene = {
             // init
                 option = 0;
                 currScene = "dungeon2";
+                document.getElementById("location").innerHTML = "Dungeon 2";
                 break;
             case 10:
             // interact
@@ -114,6 +118,7 @@ var scene = {
                     // move back to dungeon1
                         option = 0;
                         currScene = "dungeon";
+                        document.getElementById("location").innerHTML = "Dungeon";
                         return document.getElementById("view").innerHTML = dungeonOptions[option];
                     }
                 }

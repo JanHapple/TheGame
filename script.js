@@ -1,7 +1,7 @@
 var currScene, option, bagStatus, bagItem = 0;
-var bagContent = ["item1", "item2", "item3"];
+var bagContent = ["stone", "item1", "item2", "item3"];
 var dungeonOptions = ["a pile of ruins.", "a dirty sheet.", "the door.", "Azruk."];
-
+var dungeon2Options = ["a skeleton.", "the tunnel.", "a spoon.", "a key."];
 
 // keyboard input
 document.onkeydown = checkKey;
@@ -40,7 +40,6 @@ function checkKey(k) {
     }
 }
 
-
 // bag
 function bag(c){
    
@@ -72,8 +71,15 @@ var scene = {
             case 10:
             // interact
                 if(option == 1){
-                // take sheet from tunnel entrance
+                    if(dungeonOptions[1] == "a dirty sheet."){
+                    // take sheet from tunnel entrance
                     dungeonOptions[1] = "a tunnel.";
+                    }else if(dungeonOptions[1] == "a tunnel."){
+                    // move to dungeon2
+                        option = 0;
+                        currScene = "dungeon2";
+                        return document.getElementById("view").innerHTML = dungeon2Options[option];
+                    }
                 }
                 break;
             default:
@@ -91,5 +97,41 @@ var scene = {
 
         // print option
         return document.getElementById("view").innerHTML = dungeonOptions[option];
-    }
+    },
+
+    dungeon2 : function(d){
+        
+        switch(d){
+            case 0:
+            // init
+                option = 0;
+                currScene = "dungeon2";
+                break;
+            case 10:
+            // interact
+                if(option == 1){
+                    if(dungeon2Options[1] == "the tunnel."){
+                    // move back to dungeon1
+                        option = 0;
+                        currScene = "dungeon";
+                        return document.getElementById("view").innerHTML = dungeonOptions[option];
+                    }
+                }
+                break;
+            default:
+            // change option
+                option += d;
+                break;
+        }
+        
+        // cycle
+        if(option > (dungeon2Options.length - 1)){
+            option -= dungeon2Options.length;
+        }else if(option < 0){
+            option = dungeon2Options.length - 1;
+        }
+
+        // print option
+        return document.getElementById("view").innerHTML = dungeon2Options[option];
+    },
 };

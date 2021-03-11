@@ -58,6 +58,13 @@ function bag(c){
 }
 
 
+// interactions
+var interact = {
+    dungeon : function(){
+        
+    }
+}
+
 // scenes
 var scene = {
     
